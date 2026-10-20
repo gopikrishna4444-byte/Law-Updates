@@ -1,0 +1,82 @@
+{
+ "last_run": "2026-10-20T16:55:55+05:30",
+ "sources": [
+  {
+   "id": "it-notifications",
+   "law": "income-tax",
+   "category": "Notifications",
+   "url": "https://incometaxindia.gov.in/Pages/communications/notifications.aspx",
+   "ok": false,
+   "found": 0,
+   "new": 0,
+   "message": "could not open page (403 Client Error: Forbidden for url: https://www.incometaxindia.gov.in/Pages/communications/notifications.aspx)",
+   "checked": "2026-10-20T16:55:55+05:30"
+  },
+  {
+   "id": "it-circulars",
+   "law": "income-tax",
+   "category": "Circulars",
+   "url": "https://incometaxindia.gov.in/Pages/communications/circulars.aspx",
+   "ok": false,
+   "found": 0,
+   "new": 0,
+   "message": "could not open page (403 Client Error: Forbidden for url: https://www.incometaxindia.gov.in/Pages/communications/circulars.aspx)",
+   "checked": "2026-10-20T16:55:55+05:30"
+  },
+  {
+   "id": "gst-central-tax",
+   "law": "gst",
+   "category": "Central Tax Notifications",
+   "url": "https://cbic-gst.gov.in/central-tax-notifications.html",
+   "ok": false,
+   "found": 0,
+   "new": 0,
+   "message": "could not open page (404 Client Error: Not Found for url: https://cbic-gst.gov.in/central-tax-notifications.html)",
+   "checked": "2026-10-20T16:55:55+05:30"
+  },
+  {
+   "id": "gst-central-tax-rate",
+   "law": "gst",
+   "category": "Central Tax (Rate) Notifications",
+   "url": "https://cbic-gst.gov.in/central-tax-rate-notifications.html",
+   "ok": false,
+   "found": 0,
+   "new": 0,
+   "message": "could not open page (404 Client Error: Not Found for url: https://cbic-gst.gov.in/central-tax-rate-notifications.html)",
+   "checked": "2026-10-20T16:55:55+05:30"
+  },
+  {
+   "id": "gst-circulars",
+   "law": "gst",
+   "category": "Circulars",
+   "url": "https://cbic-gst.gov.in/circulars.html",
+   "ok": false,
+   "found": 0,
+   "new": 0,
+   "message": "could not open page (404 Client Error: Not Found for url: https://cbic-gst.gov.in/circulars.html)",
+   "checked": "2026-10-20T16:55:55+05:30"
+  },
+  {
+   "id": "mca-notifications",
+   "law": "companies",
+   "category": "Notifications",
+   "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/notifications.html",
+   "ok": false,
+   "found": 0,
+   "new": 0,
+   "message": "page opened but no items were recognised - the site layout may have changed",
+   "checked": "2026-10-20T16:55:55+05:30"
+  },
+  {
+   "id": "mca-circulars",
+   "law": "companies",
+   "category": "Circulars",
+   "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/circulars.html",
+   "ok": false,
+   "found": 0,
+   "new": 0,
+   "message": "page opened but no items were recognised - the site layout may have changed",
+   "checked": "2026-10-20T16:55:55+05:30"
+  }
+ ]
+}
