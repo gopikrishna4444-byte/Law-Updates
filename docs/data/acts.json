@@ -1,0 +1,35 @@
+{
+  "_help": "The 'Acts' tab. Links to the official consolidated text of each law. Edit or add links here; the app picks them up on the next refresh.",
+  "groups": [
+    {
+      "law": "income-tax",
+      "title": "Income Tax",
+      "links": [
+        {"name": "Income-tax Act, 2025 (official page)", "note": "Act text, mapping utility 1961 ↔ 2025, FAQs", "url": "https://www.incometaxindia.gov.in/income-tax-act-202511"},
+        {"name": "Income Tax Department – home", "note": "Rules 2026, forms, tax calendar", "url": "https://www.incometaxindia.gov.in/"},
+        {"name": "Notifications (all)", "note": "Official list on the department site", "url": "https://incometaxindia.gov.in/Pages/communications/notifications.aspx"},
+        {"name": "Circulars (all)", "note": "Official list on the department site", "url": "https://incometaxindia.gov.in/Pages/communications/circulars.aspx"}
+      ]
+    },
+    {
+      "law": "gst",
+      "title": "GST",
+      "links": [
+        {"name": "CBIC GST portal", "note": "CGST / IGST / UTGST Acts, Rules, notifications", "url": "https://cbic-gst.gov.in/"},
+        {"name": "CBIC Tax Information portal", "note": "Searchable Acts, Rules, notifications, circulars", "url": "https://taxinformation.cbic.gov.in/"},
+        {"name": "Central Tax notifications", "note": "Official list", "url": "https://cbic-gst.gov.in/central-tax-notifications.html"},
+        {"name": "GST circulars", "note": "Official list", "url": "https://cbic-gst.gov.in/circulars.html"}
+      ]
+    },
+    {
+      "law": "companies",
+      "title": "Companies Act",
+      "links": [
+        {"name": "Companies Act, 2013 – India Code", "note": "Consolidated text with amendments", "url": "https://www.indiacode.nic.in/handle/123456789/2114"},
+        {"name": "MCA – Acts & Rules", "note": "Act, Rules, notifications, circulars", "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html"},
+        {"name": "MCA notifications", "note": "Official list", "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/notifications.html"},
+        {"name": "MCA circulars", "note": "Official list", "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/circulars.html"}
+      ]
+    }
+  ]
+}

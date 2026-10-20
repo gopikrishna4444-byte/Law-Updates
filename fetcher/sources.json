@@ -1,0 +1,68 @@
+{
+  "_help": "Each source is one official page that lists notifications/circulars. If a site changes its address, just edit the url here. 'render': true opens the page in a headless browser first (needed for sites that build their lists with JavaScript, like MCA). 'include' is a regex the link text, row text or link address must match to be kept. 'exclude' drops matching links.",
+  "sources": [
+    {
+      "id": "it-notifications",
+      "law": "income-tax",
+      "category": "Notifications",
+      "url": "https://incometaxindia.gov.in/Pages/communications/notifications.aspx",
+      "include": "notification|\\b\\d{1,4}/20\\d{2}\\b|\\.pdf",
+      "exclude": "javascript:|mailto:|#$|sitemap|feedback|login|sign ?in",
+      "render": false
+    },
+    {
+      "id": "it-circulars",
+      "law": "income-tax",
+      "category": "Circulars",
+      "url": "https://incometaxindia.gov.in/Pages/communications/circulars.aspx",
+      "include": "circular|\\b\\d{1,4}/20\\d{2}\\b|\\.pdf",
+      "exclude": "javascript:|mailto:|#$|sitemap|feedback|login|sign ?in",
+      "render": false
+    },
+    {
+      "id": "gst-central-tax",
+      "law": "gst",
+      "category": "Central Tax Notifications",
+      "url": "https://cbic-gst.gov.in/central-tax-notifications.html",
+      "include": "central tax|\\.pdf|notification",
+      "exclude": "javascript:|mailto:|#$|hindi",
+      "render": false
+    },
+    {
+      "id": "gst-central-tax-rate",
+      "law": "gst",
+      "category": "Central Tax (Rate) Notifications",
+      "url": "https://cbic-gst.gov.in/central-tax-rate-notifications.html",
+      "include": "rate|\\.pdf|notification",
+      "exclude": "javascript:|mailto:|#$|hindi",
+      "render": false
+    },
+    {
+      "id": "gst-circulars",
+      "law": "gst",
+      "category": "Circulars",
+      "url": "https://cbic-gst.gov.in/circulars.html",
+      "include": "circular|\\.pdf",
+      "exclude": "javascript:|mailto:|#$|hindi",
+      "render": false
+    },
+    {
+      "id": "mca-notifications",
+      "law": "companies",
+      "category": "Notifications",
+      "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/notifications.html",
+      "include": "notification|rules|amendment|\\.pdf|g\\.?s\\.?r|s\\.?o\\.",
+      "exclude": "javascript:|mailto:|#$|login|register",
+      "render": true
+    },
+    {
+      "id": "mca-circulars",
+      "law": "companies",
+      "category": "Circulars",
+      "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/circulars.html",
+      "include": "circular|\\.pdf",
+      "exclude": "javascript:|mailto:|#$|login|register",
+      "render": true
+    }
+  ]
+}
