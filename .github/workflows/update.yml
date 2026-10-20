@@ -1,0 +1,57 @@
+name: Fetch latest updates
+
+on:
+  schedule:
+    # Twice a day: 7:17 AM and 6:47 PM India time (times below are UTC)
+    - cron: "47 1 * * *"
+    - cron: "17 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-updates
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tools
+        run: |
+          pip install -r fetcher/requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Fetch official pages
+        id: fetch
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          APP_URL: ${{ vars.APP_URL }}
+        run: python fetcher/fetch.py
+
+      - name: Save new data
+        run: |
+          git config user.name "updates-bot"
+          git config user.email "updates-bot@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Updates $(TZ=Asia/Kolkata date '+%d %b %Y %H:%M IST')"
+            git push
+          fi
+
+      - name: Report if every source failed
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "::error::No source could be read. If this keeps happening the government sites may be blocking GitHub's servers - see README, 'Run it from your own computer'."
+          exit 1
