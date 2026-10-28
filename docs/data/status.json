@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-27T19:37:17+05:30",
+ "last_run": "2026-10-28T07:58:38+05:30",
  "sources": [
   {
    "id": "it-notifications",
@@ -10,7 +10,7 @@
    "found": 0,
    "new": 0,
    "message": "could not open page (403 Client Error: Forbidden for url: https://www.incometaxindia.gov.in/Pages/communications/notifications.aspx)",
-   "checked": "2026-10-27T19:37:17+05:30"
+   "checked": "2026-10-28T07:58:38+05:30"
   },
   {
    "id": "it-circulars",
@@ -21,7 +21,7 @@
    "found": 0,
    "new": 0,
    "message": "could not open page (403 Client Error: Forbidden for url: https://www.incometaxindia.gov.in/Pages/communications/circulars.aspx)",
-   "checked": "2026-10-27T19:37:17+05:30"
+   "checked": "2026-10-28T07:58:38+05:30"
   },
   {
    "id": "gst-central-tax",
@@ -32,7 +32,7 @@
    "found": 0,
    "new": 0,
    "message": "could not open page (404 Client Error: Not Found for url: https://cbic-gst.gov.in/central-tax-notifications.html)",
-   "checked": "2026-10-27T19:37:17+05:30"
+   "checked": "2026-10-28T07:58:38+05:30"
   },
   {
    "id": "gst-central-tax-rate",
@@ -43,7 +43,7 @@
    "found": 0,
    "new": 0,
    "message": "could not open page (404 Client Error: Not Found for url: https://cbic-gst.gov.in/central-tax-rate-notifications.html)",
-   "checked": "2026-10-27T19:37:17+05:30"
+   "checked": "2026-10-28T07:58:38+05:30"
   },
   {
    "id": "gst-circulars",
@@ -54,7 +54,7 @@
    "found": 0,
    "new": 0,
    "message": "could not open page (404 Client Error: Not Found for url: https://cbic-gst.gov.in/circulars.html)",
-   "checked": "2026-10-27T19:37:17+05:30"
+   "checked": "2026-10-28T07:58:38+05:30"
   },
   {
    "id": "mca-notifications",
@@ -65,7 +65,7 @@
    "found": 0,
    "new": 0,
    "message": "page opened but no items were recognised - the site layout may have changed",
-   "checked": "2026-10-27T19:37:17+05:30"
+   "checked": "2026-10-28T07:58:38+05:30"
   },
   {
    "id": "mca-circulars",
@@ -76,7 +76,7 @@
    "found": 0,
    "new": 0,
    "message": "page opened but no items were recognised - the site layout may have changed",
-   "checked": "2026-10-27T19:37:17+05:30"
+   "checked": "2026-10-28T07:58:38+05:30"
   }
  ]
 }
